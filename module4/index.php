@@ -13,11 +13,23 @@
     $nr2=5
     function numbers($nr1, $nr2){
         if($nr1>$nr2){
-            echo($nr1)
+            return($nr1);
         }
-        if($nr1<$nr2){
-            echo($nr2)
+        else($nr1<$nr2){
+            return($nr2);
         }
     }
-    
+    echo numbers(18,30)
+
+    function qift($q){
+        if($q%==0){
+            echo"$q eshte qift";
+        }
+        else{
+            echo"$q nuk eshte qift";
+        }
+    }   
+    qift(142)
+
+    function 
 ?>
