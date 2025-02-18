@@ -24,6 +24,14 @@ while(!feof($my_file)) {
     echo fgets($my_file) . "<br>";
 }
 
-$file = fopen()
+$my_file = fopen("file1.txt", "w");
+
+$text = "computer programing";
+
+fwrite($my_file, $text);
+
+$my_file =fopen ("data.txt","a+");
+
+fwrite($my_file, "Data test 2");
 
 ?>
