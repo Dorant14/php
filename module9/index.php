@@ -1,10 +1,10 @@
 <?php 
 
-$username = $_GET['username']
-$password = $_GET['password']
+$username = $_GET['username'];
+$password = $_GET['password'];
 echo $userame;
 echo "<br>";
-echo $password
+echo $password;
 
 ?>
  
@@ -16,7 +16,7 @@ echo $password
     <title>Form</title>
 </head>
 <body>
-    
+
     <form action="index.php" method="get">
 
     <label for="username">Username</label>
