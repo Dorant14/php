@@ -41,12 +41,13 @@
                 <td><?= $user['surname']?></td>
                 <td><?= $user['email']?></td>
                 <td><?= $user['age']?></td>
+                <td> <?="<a hearf='edit.php?id=$user[id]'>Edit</a>"?> | <?="<a hearf='delet.php?id=$user[id]'> Delet </a>"?></td>
             </tr>
             <?php
         }
         ?>
     </tbody>
     </table>
-    <a href="index.php">Add User</a>
+    <a href="index.php">Add User</a> 
 </body>
 </html>
