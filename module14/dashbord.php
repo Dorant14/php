@@ -3,7 +3,15 @@
     if(empty($_SESSION['username'])){
         header("Location: login.php");
     }
+    $sql = 'SELECT * FROM user';
+    $sekectUser = $conn->prepare($sql);
+    $sekectUser->execute();
+
+    $user = $sekectUser->fetchAll();
+
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -25,6 +33,15 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a href="#" class="navbar-brand col-sm-3 col-md-2n mr-0">Welcome, <i><?php echo $_SESSION['username
+        ']?></i> </a>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="logout.php" href="nav-link">Sign out</a>
+            </li>
+        </ul>
+    </nav>
     <?php 
     include_once('config.php');
     $sql = 'SELECT * FROM user';
